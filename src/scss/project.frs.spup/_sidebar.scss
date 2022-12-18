@@ -1,0 +1,36 @@
+#side-bar {
+	width: 280px;
+	height: 100vh;
+	border-right: solid 1px #DEE2E6;
+
+	.brand-logo {
+		width: 75px;
+		margin: 20px auto;
+		display: block;
+	}
+
+	.nav {
+
+		.nav-item {
+
+			.nav-link {
+				color: #036735;
+				letter-spacing: .75px;
+				text-transform: uppercase;
+
+				&:hover {
+					background: #272A2F;
+					color: #FDFDFD;
+				}
+			}
+		}
+	}
+
+	/* MEDIA BREAKPOINT */
+	@media (min-width: 768px) {
+		float: left;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+}

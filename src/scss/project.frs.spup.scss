@@ -1,0 +1,90 @@
+@import 'project.frs.spup/buttons';
+@import 'project.frs.spup/global';
+@import 'project.frs.spup/panels';
+
+.navbar {
+	width: 100%;
+	
+	.navbar-brand {
+
+		.brand-logo {
+			width: 40px;
+		}
+	}
+
+	.navbar-nav {
+
+		.nav-item {
+
+			.nav-link {
+				color: #272A2F;
+				letter-spacing: .5px;
+				text-transform: uppercase;
+			}
+
+			.user {
+				.avatar {
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+
+	&.index {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		position: fixed !important;
+		top: 0;
+		left: 0;
+
+		.navbar-nav {
+			.nav-item {
+				.nav-link {
+					color: #FFF !important;
+				}
+			}
+		}
+	}	
+
+	&.scrolling {
+		padding-top: 8px;
+		padding-bottom: 8px;
+		background: #FFF;
+		box-shadow: 0 0 10px #000;
+		transition: 300ms ease-in-out all;
+
+		.navbar-nav {
+			.nav-item {
+				.nav-link {
+					color: #272A2F !important;
+				}
+			}
+		}
+	}
+}
+
+.banner {
+	background: rgba(0, 0, 0, .5);
+	color: #FFF;
+	z-index: -1;
+}
+
+.page-header {
+	padding-top: 55px;
+	padding-bottom: 25px;
+	background: #272A2F;
+
+	h1 {
+		color: #FFF;
+		font-size: 32px !important;
+	}
+}
+
+footer {
+	padding: 10px 0;
+	background: #272A2F;
+	color: #FDFDFD;
+	text-align: center;
+}

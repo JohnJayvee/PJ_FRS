@@ -1,0 +1,18 @@
+.breadcrumb {
+	padding-right: 25px;
+	padding-left: 25px;
+	background: #272A2F;
+	border-radius: 0;
+
+	.breadcrumb-item {
+		color: #FDFDFD;
+
+		a {
+			color: #3498DB !important;
+		}
+	}
+
+	@media (min-width: 768px) {
+
+	}
+}

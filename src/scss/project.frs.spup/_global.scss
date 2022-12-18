@@ -1,0 +1,101 @@
+#wrapper {
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.link {
+	color: #036735;
+	
+	&:hover {
+		color: #014B26;
+		text-decoration: none;
+	}
+}
+
+
+#main {
+	width: 100%;
+	height: 100vh;
+	background: #F1F1F1;
+	overflow-y: auto;
+
+	.navbar {
+		background: #FFF;
+		border-bottom: solid 1px #DEE2E6;
+	}
+
+	.content {
+		padding: 15px 25px;
+
+		.content-header {
+			margin-bottom: 25px;
+			letter-spacing: .75px;
+			text-transform: uppercase;
+
+			h1 {
+				font-size: 26px;
+			}
+		}
+
+		.section {
+			.table {
+				background: #FFF !important;
+			}
+		}
+
+		.section + .section {
+			margin-top: 15px;
+		}
+	}
+
+	/* MEDIA BREAKPOINT */
+	@media (min-width: 768px) {
+		width: calc(100% - 281px);
+	}
+}
+
+
+.status {
+	padding: 2px 6px;
+	background: transparent;
+	border: solid 1px transparent;
+	border-radius: 20px;
+	color: #F1F1FD;
+	cursor: default;
+	font-size: 10px;
+	letter-spacing: 1px;
+	line-height: 10px;
+	text-shadow: 0 0 1px #000;
+	text-transform: uppercase;
+
+	&.pending {
+		background: #1ABC9C;
+		border-color: #16A085;
+	}
+
+	&.rejected {
+		background: #E74C3C;
+		border-color: #C0392B;
+	}
+
+	&.approved {
+		background: #3498DB;
+		border-color: #2980B9;
+	}
+
+	&.cancelled {
+		background: #E67E22;
+		border-color: #D35400;
+	}
+
+	&.completed {
+		background: #2ECC71;
+		border-color: #27AE60;
+	}
+
+	&.deleted {
+		background: #34495E;
+		border-color: #2C3E50;
+	}
+}

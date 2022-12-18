@@ -1,0 +1,22 @@
+.btn-primary, .btn-outline-primary,
+.btn-secondary, .btn-outline-secondary,
+.btn-success, .btn-outline-success,
+.btn-info, .btn-outline-info,
+.btn-warning, .btn-outline-warning,
+.btn-danger, .btn-outline-danger,
+.btn-default, .btn-outline-default,
+.btn-light, .btn-outline-light,
+.btn-dark, .btn-outline-dark {
+	box-shadow: none !important;
+	outline: none !important;
+}
+
+.btn-primary {
+	background: #036735;
+	border-color: #02582D; 
+
+	&:hover, &:active, &:focus {
+		background: #014B26 !important;
+		border-color: #02582D !important; 
+	}
+}
